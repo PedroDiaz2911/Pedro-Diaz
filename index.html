@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pedro Diaz</title>
-    <link rel="icon" href="https://raw.githubusercontent.com/PedroDiaz2911/Pedro-Diaz/6347d8ed85784648639cd4ab62dfc54c58ff26b7/favicon-32x32.png" type="image/png">
+    <link rel="icon"
+        href="https://raw.githubusercontent.com/PedroDiaz2911/Pedro-Diaz/6347d8ed85784648639cd4ab62dfc54c58ff26b7/favicon-32x32.png"
+        type="image/png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -14,160 +17,226 @@
             font-family: 'Arial', sans-serif;
             scroll-behavior: smooth;
         }
+
         .navbar {
             background-color: #343a40;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
+
         .navbar a {
             color: white !important;
             font-weight: bold;
         }
+
         .hero-section {
             background: linear-gradient(135deg, #6a11cb, #2575fc);
             color: white;
             padding: 100px 0;
             text-align: center;
         }
+
         .hero-section h1 {
             font-size: 3.5rem;
             font-weight: bold;
         }
+
         .hero-section p {
             font-size: 1.2rem;
             margin-top: 20px;
         }
+
         .section-title {
-            font-size: 2.5rem;
-            font-weight: bold;
-            margin-bottom: 40px;
-            text-align: center;
-            color: #343a40;
-        }
-        .section-title-C {
-            font-size: 2.5rem;
-            font-weight: bold;
-            margin-bottom: 40px;
-            text-align: center;
-            color: #FFFFFF;
-        }
-        .card {
-            border: none;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
-        }
-        .card:hover {
-            transform: translateY(-10px);
-        }
-        .timeline {
-            position: relative;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        .timeline::after {
-            content: '';
-            position: absolute;
-            width: 6px;
-            background-color: #343a40;
-            top: 0;
-            bottom: 0;
-            left: 50%;
-            margin-left: -3px;
-        }
-        .timeline-item {
-            padding: 10px 40px;
-            position: relative;
-            width: 50%;
-        }
-        .timeline-item::after {
-            content: '';
-            position: absolute;
-            width: 25px;
-            height: 25px;
-            background-color: white;
-            border: 4px solid #2575fc;
-            border-radius: 50%;
-            top: 15px;
-            z-index: 1;
-        }
-        .left {
-            left: 0;
-        }
-        .right {
-            left: 50%;
-        }
-        .left::after {
-            right: -12px;
-        }
-        .right::after {
-            left: -12px;
-        }
-        .timeline-content {
-            padding: 20px;
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        @media screen and (max-width: 768px) {
+                font-size: 2.5rem;
+                font-weight: bold;
+                margin-bottom: 40px;
+                text-align: center;
+                color: #343a40;
+                font-family: cursive;
+                text-decoration: underline;
+            }
+
+            .section-title-C {
+                font-size: 2.5rem;
+                font-weight: bold;
+                margin-bottom: 40px;
+                text-align: center;
+                color: #FFFFFF;
+            }
+
+            .card {
+                border: none;
+                border-radius: 10px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                transition: transform 0.3s ease;
+            }
+
+            .card:hover {
+                transform: translateY(-10px);
+            }
+
+            .timeline {
+                position: relative;
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+
             .timeline::after {
-                left: 31px;
+                content: '';
+                position: absolute;
+                width: 6px;
+                background-color: #343a40;
+                top: 0;
+                bottom: 0;
+                left: 50%;
+                margin-left: -3px;
             }
+
             .timeline-item {
-                width: 100%;
-                padding-left: 70px;
-                padding-right: 25px;
+                padding: 10px 40px;
+                position: relative;
+                width: 50%;
             }
+
             .timeline-item::after {
-                left: 18px;
+                content: '';
+                position: absolute;
+                width: 25px;
+                height: 25px;
+                background-color: white;
+                border: 4px solid #2575fc;
+                border-radius: 50%;
+                top: 15px;
+                z-index: 1;
             }
+
+            .left {
+                left: 0;
+            }
+
             .right {
-                left: 0%;
+                left: 50%;
             }
-        }
-        .footer {
-            background-color: #343a40;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-            font-family: 'Arial', sans-serif;
-        }
-        .footer a {
-            color: #6c757d;
-            text-decoration: none;
-        }
-        
-        /* Estilos para el botón "Volver arriba" */
-        #back-to-top {
-            width: 50px;
-            height: 50px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            opacity: 0.8;
-            transition: all 0.3s ease;
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            z-index: 99;
-            background-color: #6a11cb;
-            color: white;
-            border: none;
-            border-radius: 50%;
-            cursor: pointer;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
-        }
-        
-        #back-to-top:hover {
-            opacity: 1;
-            transform: translateY(-5px);
-            background-color: #2575fc;
-        }
-        
-        #back-to-top.show {
-            display: flex !important;
-        }
+
+            .left::after {
+                right: -12px;
+            }
+
+            .right::after {
+                left: -12px;
+            }
+
+            .timeline-content {
+                padding: 20px;
+                background-color: white;
+                border-radius: 10px;
+                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            }
+
+            .Funcion {
+                font-size: 1.10rem;
+                font-weight: bold;
+                margin-top: 0;
+                margin-bottom: 1rem;
+                text-decoration: underline
+                    /*font-family: fantasy;*/
+            }
+
+            .Rol {
+                font-size: 1rem;
+                font-weight: bold;
+                margin-top: 0;
+                margin-bottom: 1rem;
+            }
+
+            .lead-p {
+                font-size: 1.25rem;
+                font-weight: 300;
+                margin-top: 0;
+                margin-bottom: 1rem;
+                text-align: justify
+            }
+
+            .lead-p .negrita {
+                font-size: 1.25rem;
+                font-weight: bold;
+                margin-top: 0;
+                margin-bottom: 1rem;
+
+
+            }
+
+            .Certificaciones {
+                font-weight: bold;
+                text-decoration: underline
+            }
+
+
+            @media screen and (max-width: 768px) {
+                .timeline::after {
+                    left: 31px;
+                }
+
+                .timeline-item {
+                    width: 100%;
+                    padding-left: 70px;
+                    padding-right: 25px;
+                }
+
+                .timeline-item::after {
+                    left: 18px;
+                }
+
+                .right {
+                    left: 0%;
+                }
+            }
+
+            .footer {
+                background-color: #343a40;
+                color: white;
+                padding: 20px 0;
+                text-align: center;
+                font-family: 'Arial', sans-serif;
+            }
+
+            .footer a {
+                color: #6c757d;
+                text-decoration: none;
+            }
+
+            /* Estilos para el botón "Volver arriba" */
+            #back-to-top {
+                width: 50px;
+                height: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                opacity: 0.8;
+                transition: all 0.3s ease;
+                position: fixed;
+                bottom: 20px;
+                right: 20px;
+                z-index: 99;
+                background-color: #6a11cb;
+                color: white;
+                border: none;
+                border-radius: 50%;
+                cursor: pointer;
+                box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            }
+
+            #back-to-top:hover {
+                opacity: 1;
+                transform: translateY(-5px);
+                background-color: #2575fc;
+            }
+
+            #back-to-top.show {
+                display: flex !important;
+            }
     </style>
 </head>
+
 <body id="top">
     <!-- 🔹 MENÚ DE NAVEGACIÓN -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
@@ -180,9 +249,9 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#about">Sobre Mí</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">Sobre mí</a></li>
                     <li class="nav-item"><a class="nav-link" href="#projects">Proyectos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills">Habilidades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Tecnologías</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
                 </ul>
             </div>
@@ -192,9 +261,10 @@
     <!-- 🔹 HERO SECTION -->
     <section class="hero-section">
         <div class="container">
-             <!-- <h1><i class="fas fa-chart-line fa-3x mb-3"></i> Transformando Datos en Decisiones</h1> -->
-            <h1><i class="fas fa-chart-line fa-3x mb-3"></i> Mi sitio web está en construcción</h1>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium eveniet, obcaecati nesciunt necessitatibus autem ex quae vel deleniti beatae recusandae eaque voluptatibus voluptate. Fugiat maxime id, similique est perspiciatis molestiae.</p>
+            <!-- <h1><i class="fas fa-chart-line fa-3x mb-3"></i> Transformando Datos en Decisiones</h1> -->
+            <h1><i class="fas fa-chart-line fa-3x mb-3"></i> Soy Pedro Díaz, Analista de Datos</h1>
+            <p>ransformo datos en soluciones inteligentes. Especializado en análisis de datos, desarrollo de dashboards
+                interactivos en Power BI y automatización de procesos con Power Automate..</p>
         </div>
     </section>
 
@@ -203,69 +273,180 @@
         <h2 class="section-title">Sobre Mí</h2>
         <div class="row">
             <div class="col-md-6">
-                <img src="https://raw.githubusercontent.com/PedroDiaz2911/Pedro-Diaz/e6fc70cc57d4942eae8912530d27188ca46c7fa6/Pedro-Diaz.jpg" alt="Foto de perfil" class="img-fluid rounded">
+                <img src="https://raw.githubusercontent.com/PedroDiaz2911/Pedro-Diaz/e6fc70cc57d4942eae8912530d27188ca46c7fa6/Pedro-Diaz.jpg"
+                    alt="Foto de perfil" class="img-fluid rounded">
             </div>
             <div class="col-md-6">
-                <p class="lead">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus blanditiis explicabo, impedit sunt soluta vitae aliquid ipsam. Vero obcaecati deleniti odio tenetur sapiente nesciunt! Cumque consequuntur in rerum debitis minima.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam placeat voluptatum molestiae tempore saepe adipisci quibusdam tempora sunt totam vero culpa natus suscipit sequi pariatur aliquam sapiente, ipsam maiores ut.</p>
-                <a target="_blank" href="https://www.linkedin.com/in/pedrodiaz29000/" class="btn btn-primary">Descargar CV</a>
+                <p class="lead-p">Profesional en Informática con más de 12 años de experiencia profesional,
+                    especializado
+                    en el uso de herramientas tecnológicas como <strong class="negrita">Power BI, SQL Server, Excel, y
+                        ofimática en
+                        general</strong>
+                    aplicadas a la gestión.</p>
+                <p class="lead-p">En los últimos 2 años me he enfocado en el área de <strong class="negrita">Gestión y
+                        Control de Proyectos</strong> bajo
+                    la metodología <strong class="negrita">PMBOK</strong>, trabajando en el sector minero como
+                    contratista para empresas como Minera
+                    Zafranal, Aris Mining (Colombia), Anglo American, Las Bambas y Hudbay Perú.</p>
+                <p class="lead-p">Mi día a día profesional está orientado al <strong class="negrita">seguimiento de
+                        entregables</strong>, control de
+                    indicadores clave (KPIs) y análisis de desempeño del proyecto. Desarrollo <strong
+                        class="negrita">dashboards interactivos en
+                        Power BI</strong>, automatizo data pipelines, y utilizo <strong class="negrita">Power
+                        Automate</strong> para optimizar procesos repetitivos.
+                </p>
+                <p class="lead-p">Tengo experiencia con plataformas como <strong class="negrita">Oracle
+                        Business</strong> e <strong class="negrita">IRIS Projects</strong>, y me apoyo en
+                    soluciones de inteligencia artificial, como chatbots AI, para agilizar flujos de trabajo y mejorar
+                    la eficiencia operativa.
+                </p>
+                <p class="lead-p">A temprana edad enfrenté la <strong class="negrita">pérdida de mi brazo
+                        derecho</strong>, experiencia que ha fortalecido
+                    mi carácter, mi capacidad de adaptación y mi enfoque proactivo. Me defino como una persona
+                    autodidacta, orientada a resultados y comprometida con la mejora continua a través de la tecnología.
+                </p>
+                <a target="_blank"
+                    href="https://drive.google.com/file/d/1q8JttgVkIZcgR64MTeKqcllJ8GrlXge6/view?usp=sharing"
+                    class="btn btn-primary">Descargar
+                    CV</a>
             </div>
         </div>
     </section>
 
-       <!-- 🔹 SECCIÓN EXPERIENCIA ACADÉMICA -->
-       <section id="academic" class="bg-light py-5">
+    <!-- 🔹 SECCIÓN EXPERIENCIA ACADÉMICA -->
+    <section id="academic" class="bg-light py-5">
         <div class="container">
             <h2 class="section-title">Experiencia Profesional</h2>
-            
+
             <div class="timeline">
-                <!-- UCSM -->
+                <!-- Cost Control Engineer, Junior -->
                 <div class="timeline-item left">
                     <div class="timeline-content">
-                        <h3>Consultoria de Ingeniería</h3>
+                        <h3>AUSENCO PERU S.R.L</h3>
+                        <p class="Rol">Cost Control Engineer, Junior <br>
+                            <strong>Periodo:</strong> Abr 2023 - Actualidad
+                        </p>
+                        <p class="Funcion">Funciones</p>
                         <ul>
-                            <li><strong>Control de Proyectos 1:</strong>
-                                <ul>
-                                    <li>Lorem ipsum dolor sit amet consectetur (<strong>Enfoque BI</strong>).</li>
-                                    <li>Lorem ipsum dolor sit amet consectetur (<strong>AAASSS</strong>).</li>
-                                    <li><strong>Periodo:</strong> 2022-2023</li>
-                                </ul>
-                            </li><br>
-                            <li><strong>Control de Proyectos 2:</strong>
-                                <ul>
-                                    <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora dolores repellendus optio culpa.</li>
-                                    <li><strong>Periodo:</strong> 2022-2023</li>
-                                </ul>
+                            <li>Diseño, desarrollo y mantenimiento de paneles interactivos de Re-portabilidad en Power
+                                BI, generando visualizaciones dinámicas para gerencia.</li>
+                            <li><strong>ZAFRANAL / TECK </strong>(Budget de 1.9M USD): Elaboración de reportes semanales
+                                de avance, seguimiento de entregables, elaboración de estados de pago y facturación.
+                            </li>
+                            <li><strong>EP MARMATO (Aris Mining) </strong>(Budget de 1.9M USD): Elaboración de reportes
+                                semanales
+                                de avance, seguimiento de entregables, elaboración de estados de pago y facturación.
+                            </li>
+                            <li><strong>MSA LAS BAMBAS: </strong>Elaborar estados de pagos y facturación, subir ETCs al
+                                sistema, Elaborar dashboard de lo gastado periódicamente, soporte en tareas diversas.
+                            </li>
+                            <li><strong>ANGLO AMERICAN QUELLAVECO </strong>(Budget de 1.2M USD): Elaborar Change Orders,
+                                elaboración de los estados de pagos (EDPs), emitir HES y facturaciones a través SAP
+                                ARIBA. <br>
+                                • Elaborar los Forecast del proyecto mediante Oracle Business,
+                                revisión de KPIs en IRIS.
+
+                            </li>
+                            <li><strong>PMO LAS BAMBAS </strong>(Budget de 112k USD): Elaborar estados de pagos y
+                                facturación, elaboración de reportes semanales, elaboración y seguimiento de firmas de
+                                las Adendas.
+                            </li>
+                            <li><strong>HUDBAY PERU S.A.C </strong>Brindar soporte directo a los controladores de
+                                proyectos.
                             </li>
                         </ul>
-                        <!-- <span class="badge bg-primary">Posgrado</span> -->
-                        
+                        <p class="Funcion">Logros</p>
+                        <ul>
+                            <li>Se desarrolló paneles interactivos para la alta gerencia, Con el cliente Aris Mining se
+                                logró la renegociación de contrato por 55k.</li>
+                        </ul>
                     </div>
                 </div>
-                
-                <!-- ULIMA -->
+
+                <!-- IT Support Help Desk  -->
                 <div class="timeline-item right">
                     <div class="timeline-content">
-                        <h3>Consultoria de Ingeniería HelpDesk</h3>
+                        <h3>AUSENCO PERU S.R.L</h3>
+                        <p class="Rol">IT Support Help Desk <br>
+                            <strong>Periodo:</strong> Nov 2019 - Mar 2023
+                        </p>
+                        <p class="Funcion">Funciones</p>
                         <ul>
-                            <li><strong>Control de Proyectos 1:</strong>
-                                <ul>
-                                    <li>Lorem ipsum dolor sit amet consectetur (<strong>Enfoque BI</strong>).</li>
-                                    <li>Lorem ipsum dolor sit amet consectetur (<strong>AAASSS</strong>).</li>
-                                    <li><strong>Periodo:</strong> 2022-2023</li>
-                                </ul>
-                            </li><br>
-                            <li><strong>Control de Proyectos 2:</strong>
-                                <ul>
-                                    <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora dolores repellendus optio culpa.</li>
-                                    <li><strong>Periodo:</strong> 2022-2023</li>
-                                </ul>
+                            <li>Brindar asistencia remota (Splashtop Business, llamada telefónica, Microsoft Teams) y
+                                asistencia presencial nivel 1 y 2 a los usuarios.
+                            </li>
+                            <li>Configuración e instalación de nuevos equipos informáticos.
+                            </li>
+                            <li>Instalación de software de Ingeniería (AutoCAD, civil 3D, entre otros).
+                            </li>
+                            <li>Brindar accesos a los proyectos unidad local.
+
+                            </li>
+                            <li>Limpieza preventiva de los equipos informáticos.
+                            </li>
+                        </ul>
+                        <p class="Funcion">Logros</p>
+                        <ul>
+                            <li>Se brindó asistencia a usuarios en el uso de Microsoft Teams de Sky business.</li>
+                            <li>Se desarrolló un dashboard en Power BI, para el seguimiento de tickets.</li>
+                            <li>Se desarrollaron automatizaciones de copias de seguridad de SharePoint mediante Power
+                                Automate.</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Programador Junior  -->
+                <div class="timeline-item left">
+                    <div class="timeline-content">
+                        <h3>Municipalidad Distrital de Carabayllo</h3>
+                        <p class="Rol">Programador Junior <br>
+                            <strong>Periodo:</strong> Nov 2016 - Sept 2019
+                        </p>
+                        <p class="Funcion">Funciones</p>
+                        <ul>
+                            <li>Partícipe en el desarrollar el módulo de trámite documentario e integración de otras
+                                áreas.</li>
+                            <li>Se desarrolló en PHP como gestor de base de datos SQL Server.</li>
+                            <li>Participe en el desarrollo del portal web institucional.</li>
+                        </ul>
+                        <p class="Funcion">Logros</p>
+                        <ul>
+                            <li>Se brindó capacitación a más de<strong> 200 trabajadores</strong> en el uso del sistema
+                                de trámite documentario.</li>
+                            <li>Se monitoreó y se logró que el<strong> 85 % </strong>del personal administrativo usó el
+                                sistema.</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Programador Junior  -->
+                <div class="timeline-item right">
+                    <div class="timeline-content">
+                        <h3>Municipalidad Distrital de Carabayllo</h3>
+                        <p class="Rol">Asistente administrativo <br>
+                            <strong>Periodo:</strong> Feb 2013 - Jul 2015
+                        </p>
+                        <p class="Funcion">Funciones</p>
+                        <ul>
+                            <li>Soporte técnico de computadoras, Sub gerencia de informática.</li>
+                            <li>Asistente administrativo en la oficina de OMPED.</li>
+                            <li>Asistente administrativo en Gerencia de la mujer y desarrollo humano.</li>
+                            <li>Asistente y encargado del centro de cómputo de la agencia Torre Blanca.</li>
+                        </ul>
+                        <p class="Funcion">Logros</p>
+                        <ul>
+                            <li>Se logró cambiar a disco sólido el <strong>90%</strong> e instalar software básico de
+                                equipos de
+                                cómputo.</li>
+                            <li>Se creó una <strong>BD en Excel</strong> para el registro de personas con discapacidad
+                                en la oficina de
+                                OMPED, se crearon tablas dinámicas para segmentar por sector.</li>
+                            <li>En Gerencia de la mujer, desempeñé como asistente del área de cómputo la cual se
+                                brindaba clases de computación a público en general. Se logró captar <strong>4 grupos de
+                                    15
+                                    alumnos por turno</strong> mediante volanteo en puntos estratégicos de torre blanca.
                             </li>
                         </ul>
                     </div>
                 </div>
-                
-                <!-- Otras universidades... -->
             </div>
         </div>
     </section>
@@ -273,66 +454,74 @@
     <!-- 🔹 SECCIÓN FORMACIÓN PROFESIONAL -->
     <section id="education" class="container py-5">
         <h2 class="section-title">Formación profesional</h2>
-        
+
         <div class="timeline">
             <!-- Maestría en Gestión Tecnológica Empresarial -->
             <div class="timeline-item left">
                 <div class="timeline-content">
-                    <h3>Diplomados (DMC - Peru)</h3>
+                    <h3>Técnico en Desarrollo de Software</h3>
                     <ul>
-                        <li><strong>Especialización:</strong> POWER APPS Y POWER AUTOMATE</li>
-                        <li><strong>Periodo:</strong> 2024</li>
+                        <li><strong>Institución:</strong> Servicio Nacional de Adiestramiento en Trabajo Industrial
+                            <strong>(SENATI)</strong>
+                        </li>
+                        <li><strong>Periodo:</strong> 2015-2018</li>
                     </ul>
-                    <br>
+                    <h3>Técnico en Computación e Informática</h3>
                     <ul>
-                        <li><strong>Especialización:</strong> POWER APPS Y POWER AUTOMATE</li>
-                        <li><strong>Periodo:</strong> 2024</li>
+                        <li><strong>Institución:</strong> IESTP "Carlos Cueto Fernandini"</li>
+                        <li><strong>Periodo:</strong> 2013-2015</li>
                     </ul>
-                    <br>
-                    <ul>
-                        <li><strong>Especialización:</strong> POWER APPS Y POWER AUTOMATE</li>
-                        <li><strong>Periodo:</strong> 2024</li>
-                    </ul>
-                    <br>
-                    <ul>
-                        <li><strong>Especialización:</strong> POWER APPS Y POWER AUTOMATE</li>
-                        <li><strong>Periodo:</strong> 2024</li>
-                    </ul>
-                    <br>
-                    <ul>
-                        <li><strong>Especialización:</strong> POWER APPS Y POWER AUTOMATE</li>
-                        <li><strong>Periodo:</strong> 2024</li>
-                    </ul>
-                    <br>
-                    <ul>
-                        <li><strong>Especialización:</strong> POWER APPS Y POWER AUTOMATE</li>
-                        <li><strong>Periodo:</strong> 2024</li>
-                    </ul>
-                    <br>
-                    <ul>
-                        <li><strong>Especialización:</strong> POWER APPS Y POWER AUTOMATE</li>
-                        <li><strong>Periodo:</strong> 2024</li>
-                    </ul>
+
                 </div>
             </div>
-            
+
             <!-- Doctorado en Ingeniería Industrial -->
             <div class="timeline-item right">
                 <div class="timeline-content">
-                    <h3>Técnico en Desarrollo de Software</h3>
+                    <h3 class="Certificaciones">Certificaciones</h3>
                     <ul>
-                        <li><strong>Institución:</strong> Servicio Nacional de Adiestramiento en Trabajo Industrial (SENATI)</li>
-                        <li><strong>Periodo:</strong> 2015-2018</li>
+                        <li>ESPECIALIZACIÓN PRIMAVERA Y RISK ANALYSIS <strong>(Certifícate)</strong> </li>
+                        <li><strong>Modalidad:</strong> Online - Jul 2025</li>
                     </ul>
-                    <br>
-                    <h3>Técnico en Computación e Informática</h3>
                     <ul>
-                        <li><strong>Institución:</strong> Carlos Cueto</li>
-                        <li><strong>Periodo:</strong> 2013-2015</li>
+                        <li>DIPLOMA ANALYTICS TRANSLATOR <strong>(DMC Institute)</strong> </li>
+                        <li><strong>Modalidad:</strong> Online - Jul 2025</li>
+                    </ul>
+                    <ul>
+                        <li>DATA STORYTELLING <strong>(DMC Institute)</strong> </li>
+                        <li><strong>Modalidad:</strong> Online - Mar 2025</li>
+                    </ul>
+                    <ul>
+                        <li>DIPLOMA LEAD DATA OFFICER <strong>(DMC Institute)</strong> </li>
+                        <li><strong>Modalidad:</strong> Online - Sept 2024</li>
+                    </ul>
+                    <ul>
+                        <li>ESPECIALIZACIÓN EN POWER BI <strong>(DMC Institute)</strong> </li>
+                        <li><strong>Modalidad:</strong> Online - Sept 2024</li>
+                    </ul>
+                    <ul>
+                        <li>ESPECIALISTA POWER BI PRO <strong>(CCANCE)</strong> </li>
+                        <li><strong>Modalidad:</strong> Online - May 2020</li>
+                    </ul>
+                    <ul>
+                        <li>PYTHON FOR ANALYTICS <strong>(DMC Institute)</strong> </li>
+                        <li><strong>Modalidad:</strong> Online - Dic 2024</li>
+                    </ul>
+                    <ul>
+                        <li>EXCEL INTERMEDIO <strong>(DMC Institute)</strong> </li>
+                        <li><strong>Modalidad:</strong> Online - Sept 2024</li>
+                    </ul>
+                    <ul>
+                        <li>POWER APPS Y POWER AUTOMATE <strong>(DMC Institute)</strong> </li>
+                        <li><strong>Modalidad:</strong> Online - Jul 2024</li>
+                    </ul>
+                    <ul>
+                        <li>PROGRAMA DE ESPECIALIZACIÓN EN SQL SERVER<strong> (SDC Learning)</strong> </li>
+                        <li><strong>Modalidad:</strong> Online - Sept 2020</li>
                     </ul>
                 </div>
             </div>
-            
+
             <!-- Otras formaciones... -->
         </div>
     </section>
@@ -344,65 +533,107 @@
             <div class="row">
                 <div class="col-md-4 mb-4">
                     <div class="card text-center">
-                        <img src="https://raw.githubusercontent.com/PedroDiaz2911/Pedro-Diaz/d9e9e4c4a2dc0ef18fdde4da89229249c5f78096/COLEGIOS.png" class="card-img-top" alt="Dashboard de Ventas">
+                        <img src="https://raw.githubusercontent.com/PedroDiaz2911/Pedro-Diaz/d9e9e4c4a2dc0ef18fdde4da89229249c5f78096/COLEGIOS.png"
+                            class="card-img-top" alt="Dashboard de Ventas">
                         <div class="card-body">
                             <h5 class="card-title fw-bold">Dashboard de Colegios</h5>
-                            <p class="card-text">Identicole es un dashboard que te permite encontrar la Institución Educativa (I.E.) más cercana a tu ubicación.</p>
-                            <a href="https://app.powerbi.com/view?r=eyJrIjoiNDc5ZDJmYTQtOTNmYi00YTNiLWE1MzgtYTc2YWUxODE5MmQ0IiwidCI6IjEwMDQ4MWYwLTY1MTItNDQ5NC05N2EzLWJhZDNkOWFmZDkwOCIsImMiOjEwfQ%3D%3D" target="_blank" class="btn btn-primary">Ver Proyecto</a>
+                            <p class="card-text">Identicole es un dashboard que te permite encontrar la Institución
+                                Educativa (I.E.) más cercana a tu ubicación.</p>
+                            <a href="#" class="btn btn-primary">Ver Proyecto</a>
                         </div>
                     </div>
                 </div>
+                <!--
                 <div class="col-md-4 mb-4">
                     <div class="card text-center">
-                        <img src="https://raw.githubusercontent.com/PedroDiaz2911/Pedro-Diaz/d9e9e4c4a2dc0ef18fdde4da89229249c5f78096/COLEGIOS.png" class="card-img-top" alt="Dashboard de Ventas">
+                        <img src="https://raw.githubusercontent.com/PedroDiaz2911/Pedro-Diaz/d9e9e4c4a2dc0ef18fdde4da89229249c5f78096/COLEGIOS.png"
+                            class="card-img-top" alt="Dashboard de Ventas">
                         <div class="card-body">
                             <h5 class="card-title fw-bold">Dashboard de Colegios 22</h5>
-                            <p class="card-text">Identicole es un dashboard que te permite encontrar la Institución Educativa (I.E.) más cercana a tu ubicación.</p>
-                            <a href="https://app.powerbi.com/view?r=eyJrIjoiNDc5ZDJmYTQtOTNmYi00YTNiLWE1MzgtYTc2YWUxODE5MmQ0IiwidCI6IjEwMDQ4MWYwLTY1MTItNDQ5NC05N2EzLWJhZDNkOWFmZDkwOCIsImMiOjEwfQ%3D%3D" target="_blank" class="btn btn-primary">Ver Proyecto</a>
+                            <p class="card-text">Identicole es un dashboard que te permite encontrar la Institución
+                                Educativa (I.E.) más cercana a tu ubicación.</p>
+                            <a href="#" class="btn btn-primary">Ver Proyecto</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 mb-4">
                     <div class="card text-center">
-                        <img src="https://raw.githubusercontent.com/PedroDiaz2911/Pedro-Diaz/d9e9e4c4a2dc0ef18fdde4da89229249c5f78096/COLEGIOS.png" class="card-img-top" alt="Dashboard de Ventas">
+                        <img src="https://raw.githubusercontent.com/PedroDiaz2911/Pedro-Diaz/d9e9e4c4a2dc0ef18fdde4da89229249c5f78096/COLEGIOS.png"
+                            class="card-img-top" alt="Dashboard de Ventas">
                         <div class="card-body">
                             <h5 class="card-title fw-bold">Dashboard de Colegios 33</h5>
-                            <p class="card-text">Identicole es un dashboard que te permite encontrar la Institución Educativa (I.E.) más cercana a tu ubicación.</p>
-                            <a href="https://app.powerbi.com/view?r=eyJrIjoiNDc5ZDJmYTQtOTNmYi00YTNiLWE1MzgtYTc2YWUxODE5MmQ0IiwidCI6IjEwMDQ4MWYwLTY1MTItNDQ5NC05N2EzLWJhZDNkOWFmZDkwOCIsImMiOjEwfQ%3D%3D" target="_blank" class="btn btn-primary">Ver Proyecto</a>
+                            <p class="card-text">Identicole es un dashboard que te permite encontrar la Institución
+                                Educativa (I.E.) más cercana a tu ubicación.</p>
+                            <a href="#" class="btn btn-primary">Ver Proyecto</a>
                         </div>
                     </div>
+                </div>-->
+            </div>
+        </div>
+    </section>
+    <!-- Tecnologías-->
+    <section id="skills" class="container my-5">
+        <h2 class="section-title">Tecnologías</h2>
+        <div class="row">
+            <!-- Power BI-->
+            <div class="col-md-3 mb-4">
+                <div class="card text-center p-4">
+                    <i class="fas fa-chart-line fa-3x mb-3"></i>
+                    <h5>Power BI</h5>
+                </div>
+            </div>
+            <!-- Excel-->
+            <div class="col-md-3 mb-4">
+                <div class="card text-center p-4">
+                    <i class="fas fa-file-excel fa-3x mb-3"></i>
+                    <h5>Excel</h5>
+                </div>
+            </div>
+            <!-- Base de datos-->
+            <div class="col-md-3 mb-4">
+                <div class="card text-center p-4">
+                    <i class="fas fa-database fa-3x mb-3"></i>
+                    <h5>Base de datos</h5>
+                </div>
+            </div>
+            <!-- Python-->
+            <div class="col-md-3 mb-4">
+                <div class="card text-center p-4">
+                    <i class="fab fa-python fa-3x mb-3"></i>
+                    <h5>Python</h5>
                 </div>
             </div>
         </div>
     </section>
-
-    <!-- 🔹 SECCIÓN HABILIDADES -->
+    <!-- Fin Tecnologías-->
+    <!--  inicio modales
+    <!-- 🔹 SECCIÓN HABILIDADES --
     <section id="skills" class="container my-5">
         <h2 class="section-title">Habilidades</h2>
         <div class="row">
-              <!-- Modal  Análisis de Datos-->
+            <!-- Modal  Análisis de Datos--
             <div class="col-md-3 mb-4">
                 <div class="card text-center p-4" data-bs-toggle="modal" data-bs-target="#aboutMeModal">
                     <i class="fas fa-chart-line fa-3x mb-3"></i>
                     <h5>Análisis de Datos</h5>
                 </div>
             </div>
-            <!-- Modal  Big Data-->
+            <!-- Modal  Big Data--
             <div class="col-md-3 mb-4">
                 <div class="card text-center p-4" data-bs-toggle="modal" data-bs-target="#aboutMeModal-BD">
                     <i class="fas fa-database fa-3x mb-3"></i>
                     <h5>Big Data</h5>
                 </div>
             </div>
-              <!-- Modal  Automatización-->
-              <div class="col-md-3 mb-4">
+            <!-- Modal  Automatización--
+            <div class="col-md-3 mb-4">
                 <div class="card text-center p-4" data-bs-toggle="modal" data-bs-target="#aboutMeModal-A">
                     <i class="fas fa-cogs fa-3x mb-3"></i>
                     <h5>Automatización</h5>
                 </div>
             </div>
-              <!-- Modal  Visualización-->
-              <div class="col-md-3 mb-4">
+            <!-- Modal  Visualización--
+            <div class="col-md-3 mb-4">
                 <div class="card text-center p-4" data-bs-toggle="modal" data-bs-target="#aboutMeModal-V">
                     <i class="fas fa-project-diagram fa-3x mb-3"></i>
                     <h5>Visualización</h5>
@@ -411,17 +642,19 @@
         </div>
     </section>
 
-    <!-- Modal  Análisis de Datos-->
+    <!-- Modal  Análisis de Datos--
     <div class="modal fade" id="aboutMeModal" tabindex="-1" aria-labelledby="aboutMeModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="aboutMeModalLabel">Sobre Mí</h5>
+                    <h5 class="modal-title" id="aboutMeModalLabel">Modal Análisis de Datos</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt quasi perferendis nostrum dolor nobis, unde, exercitationem ullam quis ratione reprehenderit animi ipsum cupiditate nam, adipisci provident veritatis excepturi natus maxime.
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt quasi perferendis nostrum
+                        dolor nobis, unde, exercitationem ullam quis ratione reprehenderit animi ipsum cupiditate nam,
+                        adipisci provident veritatis excepturi natus maxime.
                     </p>
                     <div class="mt-4">
                         <a href="https://www.linkedin.com/in/tuperfil" target="_blank" class="btn btn-primary me-2">
@@ -438,36 +671,36 @@
             </div>
         </div>
     </div>
-
-        <!-- Modal  Big Data-->
-        <div class="modal fade" id="aboutMeModal-BD" tabindex="-1" aria-labelledby="aboutMeModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="aboutMeModalLabel">Modal  Big Data</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <!-- Modal  Big Data--
+    <div class="modal fade" id="aboutMeModal-BD" tabindex="-1" aria-labelledby="aboutMeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="aboutMeModalLabel">Modal Big Data</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, ad quibusdam libero iure
+                        pariatur porro perspiciatis, natus voluptatibus, fuga quisquam a rerum officia veritatis veniam
+                        quidem non vitae commodi maxime!
+                    </p>
+                    <div class="mt-4">
+                        <a href="#" target="_blank" class="btn btn-primary me-2">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </a>
+                        <a href="https://github.com/tuperfil" target="_blank" class="btn btn-dark">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
                     </div>
-                    <div class="modal-body">
-                        <p>
-                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, ad quibusdam libero iure pariatur porro perspiciatis, natus voluptatibus, fuga quisquam a rerum officia veritatis veniam quidem non vitae commodi maxime!
-                        </p>
-                        <div class="mt-4">
-                            <a href="https://www.linkedin.com/in/tuperfil" target="_blank" class="btn btn-primary me-2">
-                                <i class="fab fa-linkedin"></i> LinkedIn
-                            </a>
-                            <a href="https://github.com/tuperfil" target="_blank" class="btn btn-dark">
-                                <i class="fab fa-github"></i> GitHub
-                            </a>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                 </div>
             </div>
         </div>
-
-            <!-- Modal Automatización-->
+    </div>
+    <!-- Modal Automatización--
     <div class="modal fade" id="aboutMeModal-A" tabindex="-1" aria-labelledby="aboutMeModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -477,7 +710,9 @@
                 </div>
                 <div class="modal-body">
                     <p>
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro eligendi deserunt officiis quo nulla ratione dolorum voluptatibus non repellendus sint pariatur reiciendis, voluptas minus delectus voluptatum ut, adipisci quas alias?
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro eligendi deserunt officiis quo
+                        nulla ratione dolorum voluptatibus non repellendus sint pariatur reiciendis, voluptas minus
+                        delectus voluptatum ut, adipisci quas alias?
                     </p>
                     <div class="mt-4">
                         <a href="https://www.linkedin.com/in/tuperfil" target="_blank" class="btn btn-primary me-2">
@@ -494,87 +729,99 @@
             </div>
         </div>
     </div>
-
-        <!-- Modal Visualización-->
-        <div class="modal fade" id="aboutMeModal-V" tabindex="-1" aria-labelledby="aboutMeModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="aboutMeModalLabel">Modal Visualización</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <!-- Modal Visualización--
+    <div class="modal fade" id="aboutMeModal-V" tabindex="-1" aria-labelledby="aboutMeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="aboutMeModalLabel">Modal Visualización</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia consequatur doloribus amet
+                        vitae excepturi, tempore porro. Eius, non! Cupiditate mollitia maxime quam, quos natus cum
+                        quidem labore! Id, explicabo iste!
+                    </p>
+                    <div class="mt-4">
+                        <a href="https://www.linkedin.com/in/tuperfil" target="_blank" class="btn btn-primary me-2">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </a>
+                        <a href="https://github.com/tuperfil" target="_blank" class="btn btn-dark">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
                     </div>
-                    <div class="modal-body">
-                        <p>
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia consequatur doloribus amet vitae excepturi, tempore porro. Eius, non! Cupiditate mollitia maxime quam, quos natus cum quidem labore! Id, explicabo iste!
-                        </p>
-                        <div class="mt-4">
-                            <a href="https://www.linkedin.com/in/tuperfil" target="_blank" class="btn btn-primary me-2">
-                                <i class="fab fa-linkedin"></i> LinkedIn
-                            </a>
-                            <a href="https://github.com/tuperfil" target="_blank" class="btn btn-dark">
-                                <i class="fab fa-github"></i> GitHub
-                            </a>
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
                 </div>
             </div>
         </div>
+    </div>
+   Fin Modales -->
+
+
     <!-- 🔹 SECCIÓN CONTACTO -->
-<section id="contact" class="bg-dark text-white py-5">
-    <div class="container">
-        <h2 class="section-title-C">Contacto</h2>
-        <div class="row">
-            <div class="col-md-6">
-                <p>📧 Email: <strong>tucorreo@gmail.com</strong></p>
-                <p>💼 LinkedIn: <a href="#" target="_blank" class="text-white">linkedin.com/tuperfil</a></p>
-                <p>📍 Ubicación: Lima, Perú</p>
-            </div>
-            <div class="col-md-6">
-                <form>
-                    <!-- Contenedor responsive para el iframe -->
-                    <div class="ratio ratio-16x9">
-                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfkPT59Hd8eW4fXxSUHPzeYffYnv9TcwVH7S9g23x5X4DXxVQ/viewform?embedded=true" 
-                                frameborder="0" 
-                                marginheight="0" 
-                                marginwidth="0">
-                            Cargando…
-                        </iframe>
-                    </div>
-                </form>
+    <section id="contact" class="bg-dark text-white py-5">
+        <div class="container">
+            <h2 class="section-title-C">Contacto</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>📧 Email: <strong>sadien2911@gmail.com</strong></p>
+                    <p>💼 LinkedIn: <a href="https://www.linkedin.com/in/pedrodiaz29000/" target="_blank"
+                            class="text-white">Pedro Diaz</a></p>
+                    <p>📍 Ubicación: Lima, Perú</p>
+                    <p><i class="fab fa-whatsapp"></i><a
+                            href="https://wa.me/51915931278?text=Vengo%20desde%20tu%20sitio%20web" target="_blank"
+                            class="text-white"> +51 915 931 278</a></p>
+                </div>
+                <div class="col-md-6">
+                    <form>
+                        <!-- Contenedor responsive para el iframe -->
+                        <div class="ratio ratio-16x9">
+                            <iframe
+                                src="https://docs.google.com/forms/d/e/1FAIpQLSfkPT59Hd8eW4fXxSUHPzeYffYnv9TcwVH7S9g23x5X4DXxVQ/viewform?embedded=true"
+                                frameborder="0" marginheight="0" marginwidth="0">
+                            </iframe>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
     <!-- 🔹 FOOTER -->
     <footer class="footer">
         <div class="container">
-            <p>© 2024 | Pedro Diaz - Análisis de Datos</p>
+            <p>© 2025- V1 | Pedro Diaz - Análisis de Datos</p>
             <p>
-                <a href="#" class="me-3"><i class="fab fa-linkedin"></i></a>
-                <a href="#" class="me-3"><i class="fab fa-github"></i></a>
-                <a href="#" class="me-3"><i class="fab fa-facebook"></i></a>
-                <a href="#" class="me-3"><i class="fab fa-instagram"></i></a>
-                <a href="#" class="me-3"><i class="fab fa-tiktok"></i></a>
+                <a href="https://www.linkedin.com/in/pedrodiaz29000/" target="_blank" class="me-3"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/PedroDiaz2911" target="_blank" class="me-3"><i
+                        class="fab fa-github"></i></a>
+                <a href="https://www.facebook.com/pedrodiazencin" target="_blank" class="me-3"><i
+                        class="fab fa-facebook"></i></a>
+                <a href="https://www.instagram.com/pedrodiaz29000/" target="_blank" class="me-3"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="https://www.tiktok.com/@pedrodiaz29000" target="_blank" class="me-3"><i
+                        class="fab fa-tiktok"></i></a>
             </p>
         </div>
     </footer>
 
     <!-- Botón "Volver arriba" -->
-    <a href="#top" class="btn btn-primary rounded-circle position-fixed bottom-0 end-0 m-4 opacity-75" style="width: 50px; height: 50px; display: none;" id="back-to-top">
-      <i class="fas fa-arrow-up"></i>
+    <a href="#top" class="btn btn-primary rounded-circle position-fixed bottom-0 end-0 m-4 opacity-75"
+        style="width: 50px; height: 50px; display: none;" id="back-to-top">
+        <i class="fas fa-arrow-up"></i>
     </a>
 
     <!-- 🔹 SCRIPTS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    
+
     <!-- Script para el botón "Volver arriba" -->
     <script>
         // Mostrar/ocultar el botón al hacer scroll
-        window.addEventListener('scroll', function() {
+        window.addEventListener('scroll', function () {
             const backToTopButton = document.getElementById('back-to-top');
             if (window.pageYOffset > 300) {
                 backToTopButton.style.display = 'flex';
@@ -582,9 +829,9 @@
                 backToTopButton.style.display = 'none';
             }
         });
-        
+
         // Scroll suave al hacer clic
-        document.getElementById('back-to-top').addEventListener('click', function(e) {
+        document.getElementById('back-to-top').addEventListener('click', function (e) {
             e.preventDefault();
             window.scrollTo({
                 top: 0,
@@ -593,4 +840,5 @@
         });
     </script>
 </body>
+
 </html>
